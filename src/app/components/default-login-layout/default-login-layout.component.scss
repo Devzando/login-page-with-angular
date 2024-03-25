@@ -1,0 +1,91 @@
+@import '../../../styles.scss';
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .form-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        padding: 0 35px;
+
+        flex-grow: 0.3;
+
+        img {
+            margin-bottom: 30px;
+        }
+
+        h2{
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 45px;
+        }
+
+        .btn-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            gap: 30px;
+
+            .divider {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 14px;
+                color: $grey-color;
+                font-weight: 400;
+                gap: 8px;
+                text-transform: uppercase;
+                padding: 0 24px;
+
+                div {
+                    flex-grow: 1;
+                    height: 3px;
+                    background-color: $grey-color;
+                }
+            }
+
+            button {
+                width: 100%;
+                font-size: 16px;
+                font-weight: 600;
+                border-radius: 8px;
+                border: none;
+                background-color: transparent;
+                padding: 12px 24px;
+    
+                &.btn-primary {
+                    background-color: $primary-color;
+                    color: white;
+                    box-shadow:0px 8px 12px rgba(148.23004603385925, 64.33935597538948, 255, 0.20000000298023224);
+                }
+    
+                &.btn-secondary {
+                    border: 1px solid $primary-color;
+                    color: $primary-color;
+                }
+            }
+        }
+
+    }
+    
+    .main-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 8px;
+        flex-grow: 1;
+        background-color: $grey-color;
+        height: 100vh;
+    }
+
+}
